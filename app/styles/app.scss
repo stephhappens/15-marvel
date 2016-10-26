@@ -4,3 +4,37 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+
+body {
+  margin: 0;
+}
+
+* {
+  border: 1rem;
+}
+
+.full-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nav-bar {
+  width: 100%;
+  margin: 0;
+  background: blue;
+  display: flex;
+  flex-grow: 1;
+
+}
+
+.marvel_logo-image {
+  width: 1rem;
+  height: 2rem;
+}
+
+.comic_photo {
+  height: 10rem;
+  width: 9rem;
+}
