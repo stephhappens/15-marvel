@@ -4,26 +4,30 @@
   background: $c-nav-bar;
   display: flex;
   flex-grow: 1;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 
 }
 
 .marvel_logo-image {
-  width: 8rem;
-  height: 3rem;
+  width: 7rem;
+  height: 2rem;
   margin-left: 10rem;
+  margin-top: .8rem;
 
 }
 
 .search_bar {
   margin: 1rem 0;
   display: flex;
-  // width: 75%;
+  flex-direction: row;
+  margin-left: 40rem;
+
 
   &-input {
     width: 100%;
-    background-color: #201c2b;
+    background-color: $c-secondary;
     box-shadow: $c-nav_bar 0 0 0 0 inset;
-    color: #dad8de;
+    color: $c-secondary;
     border-top: .1rem solid $c-nav_bar;
     border-bottom: .1rem solid $c-nav_bar;
     border-right: .1rem solid $c-nav_bar;
@@ -34,8 +38,11 @@
 }
 
 .fa-search {
-  height: 1rem;
-  width: 1rem;
+  color: $c-nav-bar;
+  background-color: $c-secondary;
+  border-left: .1rem solid $c-nav-bar;
+  border-top: .1rem solid $c-nav-bar;
+  border-bottom: .1rem solid $c-nav-bar;
+  padding: .3rem;
 
-  margin-left: 1rem;
 }

@@ -1,4 +1,5 @@
 $c-nav-bar: rgba(44, 62, 78, 1.0);
+$c-secondary: #dad8de;
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
@@ -6,8 +7,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'nav-bar';
-
-
+@import 'left-side';
+@import 'right-side';
 
 body {
   margin: 0;
@@ -24,35 +25,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
-.comic_photo {
-  height: 10rem;
-  width: 9rem;
-}
-
 .section {
   display: flex;
   margin-top: 2rem;
-}
-
-.section_left {
-  width: 50%;
-  margin-left: 1rem;
-
-}
-
-.section-right {
-  width: 50%;
-  margin-right: 1rem;
-}
-
-.characters_collection-image {
-  width: 3rem;
-  height: 4rem;
-}
-
-.comic_collection-images {
-  width: 8rem;
-  height: 9rem;
 }
