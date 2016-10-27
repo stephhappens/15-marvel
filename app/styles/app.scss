@@ -1,4 +1,5 @@
-$c-nav-bar: rgba(44, 62, 78, 1.0);
+$c-primary: rgba(44, 62, 78, 1.0);
+$c-font-color: rgba(59, 59, 59, 1.0);
 $c-secondary: #dad8de;
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
@@ -9,23 +10,4 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'nav-bar';
 @import 'left-side';
 @import 'right-side';
-
-body {
-  margin: 0;
-}
-
-* {
-  border: 1rem;
-}
-
-.full-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.section {
-  display: flex;
-  margin-top: 2rem;
-}
+@import 'reset';
