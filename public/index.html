@@ -25,10 +25,12 @@
         <div class="section_left--content">
           <div class="featured_photo">
             <!-- <img src="http://www.blastr.com/sites/blastr/files/3047641-poster-p-1-first-look-at-the-new-captain-marvel-written-by-agent-carter-showrunner.jpg" alt="" class="comic_photo"> -->
-            <img v-bind:src= "seriesData.data.results[0].thumbnail.path" v-bind:alt="seriesData.data.results[0].title" class="comic_photo">
-            <figcaption class="featured_photo--caption">I AM A CAPTION!</figcaption>
-            <h6 class="featured_photo--subcaption">I am a subcaption.</h6>
+            <img v-bind:src= "seriesData.data.results[0].thumbnail.path + '.' + seriesData.data.results[0].thumbnail.extension" v-bind:alt="seriesData.data.results[0].title" class="comic_photo">
+            <figcaption class="featured_photo--caption">{{ seriesData.data.results[0].title }}</figcaption>
+            <h6 class="featured_photo--subcaption">{{ seriesData.data.results[0].startYear }} - {{ seriesData.data.results[0].endYear }}</h6>
+            <!-- <h6 class="sidebar__date"></h6> -->
           </div>
+
           <div class="creator">
             <h4 class="creator_title">Creator </h4>
             <ul class="creator_list">
