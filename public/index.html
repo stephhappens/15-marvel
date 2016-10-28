@@ -24,7 +24,8 @@
       <div class="section_left">
         <div class="section_left--content">
           <div class="featured_photo">
-            <img src="http://www.blastr.com/sites/blastr/files/3047641-poster-p-1-first-look-at-the-new-captain-marvel-written-by-agent-carter-showrunner.jpg" alt="" class="comic_photo">
+            <!-- <img src="http://www.blastr.com/sites/blastr/files/3047641-poster-p-1-first-look-at-the-new-captain-marvel-written-by-agent-carter-showrunner.jpg" alt="" class="comic_photo"> -->
+            <img v-bind:src= "seriesData.data.results[0].thumbnail.path" v-bind:alt="seriesData.data.results[0].title" class="comic_photo">
             <figcaption class="featured_photo--caption">I AM A CAPTION!</figcaption>
             <h6 class="featured_photo--subcaption">I am a subcaption.</h6>
           </div>
